@@ -1,4 +1,4 @@
-# Discord-Bot-Dms-Message-Auto-Saver
+# Discord-Selfbot-Dms-Message-Auto-Saver
 
 Setup:
 

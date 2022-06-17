@@ -28,6 +28,7 @@ try:
   json_data = open("settings.json")
   json_data = json.load(json_data)
   token = str(json_data["discord_token"])
+  save_diffrent = str(json_data["wanna_save_each_user_in_a_diffrent_txt_file_y_or_n"])
 except Exception:
   print('Missing "settings.json" File, It Stores All Settings')
   input("")
@@ -71,7 +72,11 @@ async def on_message(self):
         print(n1)
         print(n2)
         print(n3)
-        file = open("discord_dms_save.txt", "a")
+        
+        if save_diffrent == "n":
+          file = open("discord_dms_save.txt", "a")
+        if save_diffrent == "y":
+          file = open(f"discord_dms_save_{str(id)}.txt", "a")
         file.write(str(n1))
         file.write("\n")
         file.write(str(n2))

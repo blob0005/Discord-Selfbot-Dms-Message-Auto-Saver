@@ -1,3 +1,4 @@
 {
-    "discord_token": "discord acc token here"
+    "discord_token": "discord acc token here",
+    "wanna_save_each_user_in_a_diffrent_txt_file_y_or_n": "n"
 }
